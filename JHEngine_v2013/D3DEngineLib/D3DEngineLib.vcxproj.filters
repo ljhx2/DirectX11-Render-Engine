@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{b0d07efc-74ea-498c-9cf5-54a2490ec744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{b7f4b2d0-7fd0-49b4-8e12-032ce6575c24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Component">
+      <UniqueIdentifier>{c53a9d81-d3ca-4e98-ac0c-5a82b792a136}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Message">
+      <UniqueIdentifier>{622854b3-bb73-4df0-99a6-cc4ae46290ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{02454a04-8a4a-4fde-822f-b5a84522d5f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Component\LightComponent">
+      <UniqueIdentifier>{8c07809a-c960-4bc7-a50a-12ecc238f041}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Component\CameraComponent">
+      <UniqueIdentifier>{75b2080d-d513-4615-9136-8408b118817d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FX">
+      <UniqueIdentifier>{35e01280-03c1-4713-97aa-9cd2ef1fdcc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{ea768b28-2740-4da3-866c-e5825681c767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Component\AnimationComponent">
+      <UniqueIdentifier>{17d5eece-d458-4013-b30c-a86f451273dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parser">
+      <UniqueIdentifier>{28833740-d6ca-493a-92e8-8eec7cf88a9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Component\RendererComponent">
+      <UniqueIdentifier>{9f125c2d-c275-47be-a417-1bbb34c45089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Component\AnimationComponent\Animation">
+      <UniqueIdentifier>{f4239276-b9ce-46d5-878d-ad8eb6602edc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BoxTest.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\D3DRenderer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\GameTimer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\gDeviceManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Input.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\RTTI.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Singleton.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\GameObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Component\Component.cpp">
+      <Filter>GameObject\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\GameObjectMgr.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Message\MessageArg.cpp">
+      <Filter>GameObject\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Message\Message.cpp">
+      <Filter>GameObject\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Message\MessageMgr.cpp">
+      <Filter>GameObject\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneMgr.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Component\TransformComponent.cpp">
+      <Filter>GameObject\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Mesh.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\gFXManager.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\VertexType.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\ResourceMgr.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Object.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\MathHelper.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\GeometryGenerator.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Grid.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\LightHelper.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Component\LightComponent\LightComponent.cpp">
+      <Filter>GameObject\Component\LightComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Component\LightComponent\DirectionalLightComponent.cpp">
+      <Filter>GameObject\Component\LightComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Component\LightComponent\PointLightComponent.cpp">
+      <Filter>GameObject\Component\LightComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Component\LightComponent\SpotLightComponent.cpp">
+      <Filter>GameObject\Component\LightComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Material.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Component\CameraComponent\CameraComponent.cpp">
+      <Filter>GameObject\Component\CameraComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Component\CameraComponent\ToolCameraComponent.cpp">
+      <Filter>GameObject\Component\CameraComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Texture.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\StringHelper.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Effect.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Component\LightComponent\LightManager.cpp">
+      <Filter>GameObject\Component\LightComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Component\CameraComponent\CameraManager.cpp">
+      <Filter>GameObject\Component\CameraComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Component\RendererComponent\RenderComponent.cpp">
+      <Filter>GameObject\Component\RendererComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Component\RendererComponent\SkinnedMeshRenderer.cpp">
+      <Filter>GameObject\Component\RendererComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Component\AnimationComponent\AnimComponent.cpp">
+      <Filter>GameObject\Component\AnimationComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Component\AnimationComponent\Animation\Bone.cpp">
+      <Filter>GameObject\Component\AnimationComponent\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Component\AnimationComponent\Animation\AnimEvaluator.cpp">
+      <Filter>GameObject\Component\AnimationComponent\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Component\AnimationComponent\Animation\AnimChannel.cpp">
+      <Filter>GameObject\Component\AnimationComponent\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Component\AnimationComponent\Animation\Animator.cpp">
+      <Filter>GameObject\Component\AnimationComponent\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\AssimpParser.cpp">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ShadowMap.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ShadowManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ShadowBuildEffect.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\DebugTexEffect.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Component\AnimationComponent\Animation\AnimClip.cpp">
+      <Filter>GameObject\Component\AnimationComponent\Animation</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BoxTest.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\D3DRenderer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\GameTimer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\gDeviceManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Input.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\RTTI.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Singleton.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\GameObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Component\Component.h">
+      <Filter>GameObject\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\GameObjectMgr.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Message\MessageArg.h">
+      <Filter>GameObject\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Message\Message.h">
+      <Filter>GameObject\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Message\MessageMgr.h">
+      <Filter>GameObject\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneMgr.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Component\TransformComponent.h">
+      <Filter>GameObject\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Mesh.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\gFXManager.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\VertexType.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ResourceMgr.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Object.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\MathHelper.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\GeometryGenerator.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Grid.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\LightHelper.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Component\LightComponent\LightComponent.h">
+      <Filter>GameObject\Component\LightComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Component\LightComponent\DirectionalLightComponent.h">
+      <Filter>GameObject\Component\LightComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Component\LightComponent\PointLightComponent.h">
+      <Filter>GameObject\Component\LightComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Component\LightComponent\SpotLightComponent.h">
+      <Filter>GameObject\Component\LightComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Material.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Component\CameraComponent\CameraComponent.h">
+      <Filter>GameObject\Component\CameraComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Component\CameraComponent\ToolCameraComponent.h">
+      <Filter>GameObject\Component\CameraComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Texture.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\StringHelper.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Effect.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Component\LightComponent\LightManager.h">
+      <Filter>GameObject\Component\LightComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Component\CameraComponent\CameraManager.h">
+      <Filter>GameObject\Component\CameraComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Component\RendererComponent\RenderComponent.h">
+      <Filter>GameObject\Component\RendererComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Component\RendererComponent\SkinnedMeshRenderer.h">
+      <Filter>GameObject\Component\RendererComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Component\AnimationComponent\AnimComponent.h">
+      <Filter>GameObject\Component\AnimationComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Component\AnimationComponent\Animation\Bone.h">
+      <Filter>GameObject\Component\AnimationComponent\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Component\AnimationComponent\Animation\AnimEvaluator.h">
+      <Filter>GameObject\Component\AnimationComponent\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Component\AnimationComponent\Animation\AnimChannel.h">
+      <Filter>GameObject\Component\AnimationComponent\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Component\AnimationComponent\Animation\Animator.h">
+      <Filter>GameObject\Component\AnimationComponent\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\AssimpParser.h">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ShadowMap.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ShadowManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ShadowBuildEffect.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\DebugTexEffect.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Component\AnimationComponent\Animation\AnimClip.h">
+      <Filter>GameObject\Component\AnimationComponent\Animation</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Resources\FX\Basic.fx">
+      <Filter>FX</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Resources\FX\color.fx">
+      <Filter>FX</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Resources\FX\LightHelper.fx">
+      <Filter>FX</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Resources\FX\BuildShadowMap.fx">
+      <Filter>FX</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Resources\FX\DebugTexture.fx">
+      <Filter>FX</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

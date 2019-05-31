@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{86D41FCB-AB04-4708-9BE6-4BE77C6A43E0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>D3DEngineLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Lib\</OutDir>
+    <TargetName>$(ProjectName)D</TargetName>
+    <IncludePath>$(DXSDK_DIR)include;ExternalLib\Effects11\include;ExternalLib\Json\include;ExternalLib\FBX\include;ExternalLib\Assimp\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;ExternalLib\Effects11\lib;ExternalLib\Json\lib;ExternalLib\FBX\lib\x86\debug;ExternalLib\Assimp\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BoxTest.cpp" />
+    <ClCompile Include="Core\D3DRenderer.cpp" />
+    <ClCompile Include="Core\GameTimer.cpp" />
+    <ClCompile Include="Core\gDeviceManager.cpp" />
+    <ClCompile Include="Core\Input.cpp" />
+    <ClCompile Include="Core\LightHelper.cpp" />
+    <ClCompile Include="Core\MathHelper.cpp" />
+    <ClCompile Include="Core\RTTI.cpp" />
+    <ClCompile Include="Core\ShadowBuildEffect.cpp" />
+    <ClCompile Include="Core\ShadowManager.cpp" />
+    <ClCompile Include="Core\ShadowMap.cpp" />
+    <ClCompile Include="Core\Singleton.cpp" />
+    <ClCompile Include="Core\StringHelper.cpp" />
+    <ClCompile Include="GameObject\Component\AnimationComponent\Animation\Animator.cpp" />
+    <ClCompile Include="GameObject\Component\AnimationComponent\Animation\AnimChannel.cpp" />
+    <ClCompile Include="GameObject\Component\AnimationComponent\Animation\AnimClip.cpp" />
+    <ClCompile Include="GameObject\Component\AnimationComponent\Animation\AnimEvaluator.cpp" />
+    <ClCompile Include="GameObject\Component\AnimationComponent\Animation\Bone.cpp" />
+    <ClCompile Include="GameObject\Component\AnimationComponent\AnimComponent.cpp" />
+    <ClCompile Include="GameObject\Component\CameraComponent\CameraComponent.cpp" />
+    <ClCompile Include="GameObject\Component\CameraComponent\CameraManager.cpp" />
+    <ClCompile Include="GameObject\Component\CameraComponent\ToolCameraComponent.cpp" />
+    <ClCompile Include="GameObject\Component\Component.cpp" />
+    <ClCompile Include="GameObject\Component\LightComponent\DirectionalLightComponent.cpp" />
+    <ClCompile Include="GameObject\Component\LightComponent\LightComponent.cpp" />
+    <ClCompile Include="GameObject\Component\LightComponent\LightManager.cpp" />
+    <ClCompile Include="GameObject\Component\LightComponent\PointLightComponent.cpp" />
+    <ClCompile Include="GameObject\Component\LightComponent\SpotLightComponent.cpp" />
+    <ClCompile Include="GameObject\Component\RendererComponent\RenderComponent.cpp" />
+    <ClCompile Include="GameObject\Component\RendererComponent\SkinnedMeshRenderer.cpp" />
+    <ClCompile Include="GameObject\Component\TransformComponent.cpp" />
+    <ClCompile Include="GameObject\GameObject.cpp" />
+    <ClCompile Include="GameObject\GameObjectMgr.cpp" />
+    <ClCompile Include="GameObject\Message\Message.cpp" />
+    <ClCompile Include="GameObject\Message\MessageArg.cpp" />
+    <ClCompile Include="GameObject\Message\MessageMgr.cpp" />
+    <ClCompile Include="Parser\AssimpParser.cpp" />
+    <ClCompile Include="Resource\DebugTexEffect.cpp" />
+    <ClCompile Include="Resource\Effect.cpp" />
+    <ClCompile Include="Resource\GeometryGenerator.cpp" />
+    <ClCompile Include="Resource\gFXManager.cpp" />
+    <ClCompile Include="Resource\Material.cpp" />
+    <ClCompile Include="Resource\Mesh.cpp" />
+    <ClCompile Include="Resource\Object.cpp" />
+    <ClCompile Include="Resource\ResourceMgr.cpp" />
+    <ClCompile Include="Resource\Texture.cpp" />
+    <ClCompile Include="Resource\VertexType.cpp" />
+    <ClCompile Include="Scene\Grid.cpp" />
+    <ClCompile Include="Scene\Scene.cpp" />
+    <ClCompile Include="Scene\SceneMgr.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BoxTest.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="Core\D3DRenderer.h" />
+    <ClInclude Include="Core\GameTimer.h" />
+    <ClInclude Include="Core\gDeviceManager.h" />
+    <ClInclude Include="Core\Input.h" />
+    <ClInclude Include="Core\LightHelper.h" />
+    <ClInclude Include="Core\MathHelper.h" />
+    <ClInclude Include="Core\RTTI.h" />
+    <ClInclude Include="Core\ShadowBuildEffect.h" />
+    <ClInclude Include="Core\ShadowManager.h" />
+    <ClInclude Include="Core\ShadowMap.h" />
+    <ClInclude Include="Core\Singleton.h" />
+    <ClInclude Include="Core\StringHelper.h" />
+    <ClInclude Include="GameObject\Component\AnimationComponent\Animation\Animator.h" />
+    <ClInclude Include="GameObject\Component\AnimationComponent\Animation\AnimChannel.h" />
+    <ClInclude Include="GameObject\Component\AnimationComponent\Animation\AnimClip.h" />
+    <ClInclude Include="GameObject\Component\AnimationComponent\Animation\AnimEvaluator.h" />
+    <ClInclude Include="GameObject\Component\AnimationComponent\Animation\Bone.h" />
+    <ClInclude Include="GameObject\Component\AnimationComponent\AnimComponent.h" />
+    <ClInclude Include="GameObject\Component\CameraComponent\CameraComponent.h" />
+    <ClInclude Include="GameObject\Component\CameraComponent\CameraManager.h" />
+    <ClInclude Include="GameObject\Component\CameraComponent\ToolCameraComponent.h" />
+    <ClInclude Include="GameObject\Component\Component.h" />
+    <ClInclude Include="GameObject\Component\LightComponent\DirectionalLightComponent.h" />
+    <ClInclude Include="GameObject\Component\LightComponent\LightComponent.h" />
+    <ClInclude Include="GameObject\Component\LightComponent\LightManager.h" />
+    <ClInclude Include="GameObject\Component\LightComponent\PointLightComponent.h" />
+    <ClInclude Include="GameObject\Component\LightComponent\SpotLightComponent.h" />
+    <ClInclude Include="GameObject\Component\RendererComponent\RenderComponent.h" />
+    <ClInclude Include="GameObject\Component\RendererComponent\SkinnedMeshRenderer.h" />
+    <ClInclude Include="GameObject\Component\TransformComponent.h" />
+    <ClInclude Include="GameObject\GameObject.h" />
+    <ClInclude Include="GameObject\GameObjectMgr.h" />
+    <ClInclude Include="GameObject\Message\Message.h" />
+    <ClInclude Include="GameObject\Message\MessageArg.h" />
+    <ClInclude Include="GameObject\Message\MessageMgr.h" />
+    <ClInclude Include="Parser\AssimpParser.h" />
+    <ClInclude Include="Resource\DebugTexEffect.h" />
+    <ClInclude Include="Resource\Effect.h" />
+    <ClInclude Include="Resource\GeometryGenerator.h" />
+    <ClInclude Include="Resource\gFXManager.h" />
+    <ClInclude Include="Resource\Material.h" />
+    <ClInclude Include="Resource\Mesh.h" />
+    <ClInclude Include="Resource\Object.h" />
+    <ClInclude Include="Resource\ResourceMgr.h" />
+    <ClInclude Include="Resource\Texture.h" />
+    <ClInclude Include="Resource\VertexType.h" />
+    <ClInclude Include="Scene\Grid.h" />
+    <ClInclude Include="Scene\Scene.h" />
+    <ClInclude Include="Scene\SceneMgr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Resources\FX\Basic.fx" />
+    <FxCompile Include="..\Resources\FX\BuildShadowMap.fx" />
+    <FxCompile Include="..\Resources\FX\color.fx" />
+    <FxCompile Include="..\Resources\FX\DebugTexture.fx" />
+    <FxCompile Include="..\Resources\FX\LightHelper.fx" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
